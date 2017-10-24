@@ -11,14 +11,14 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // configure a public directory to host static content
 app.use(express.static(__dirname + '/public'));
 app.use(cookieParser());
-app.use(session({ secret: process.env.SESSION_SECRET }));
+app.use(session({ secret: 'chandrima' }));
 app.use(passport.initialize());
 app.use(passport.session());
 
 //require ("./test/app.js")(app);
 
 //var ipaddress = process.env.OPENSHIFT_NODEJS_IP;
-var port      = process.env.PORT||3000;
+var port      = process.env.PORT || 3000;
 
 var assignment = require("./assignment/app.js");
 assignment(app);
