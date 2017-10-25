@@ -21,5 +21,20 @@
     "start": "node server.js"
   },
   "author": "Jose G. Annunziato",
-  "license": "ISC"
+  "license": "ISC",
+  "directories": {
+    "test": "test"
+  },
+  "engines": {
+    "node": "v4.4.4",
+    "npm": "2.15.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chandrimaghosh/ghosh-chandrima-webdevlop.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chandrimaghosh/ghosh-chandrima-webdevlop/issues"
+  },
+  "homepage": "https://github.com/chandrimaghosh/ghosh-chandrima-webdevlop#readme"
 }

@@ -18,7 +18,7 @@ app.use(passport.session());
 //require ("./test/app.js")(app);
 
 //var ipaddress = process.env.OPENSHIFT_NODEJS_IP;
-var port      = process.env.PORT || 3002;
+var port = process.env.PORT || 3002;
 
 
 app.get('/', function(request, response) {
