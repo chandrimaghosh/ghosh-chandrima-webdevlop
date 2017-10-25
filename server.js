@@ -18,7 +18,15 @@ app.use(passport.session());
 //require ("./test/app.js")(app);
 
 //var ipaddress = process.env.OPENSHIFT_NODEJS_IP;
-var port      = process.env.PORT || 3000;
+var port      = process.env.PORT || 3002;
+
+
+app.get('/', function(request, response) {
+    var result = 'App is running'
+    response.send(result);
+}).listen(app.get('port'), function() {
+    console.log('App is running, server is listening on port ', app.get('port'));
+});
 
 var assignment = require("./assignment/app.js");
 assignment(app);
